@@ -4,9 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Selectors</title>
-    <link rel="stylesheet" href="css/tag.css">
+    <link rel="stylesheet" href="tag.css">
     <style>
-        /* ... */
+        /* SELETORES */
+        /* * */
+        /* .tag */
+        /* #aprovados */
+        /* #aninhado > div */
+        /* #aninhado section */
+        /* p + ul */
+        /* p + ol */
+        /* p ~ ol */
+        /* [feira] */
+        /* [feira=casa] */
+        [feira*=sa] {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* span:nth-child(1) */
+        /* section > :nth-child(odd) */
+        /* section > :nth-child(even) */
     </style>
 </head>
 
@@ -29,7 +46,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
@@ -38,7 +55,7 @@
             </div>
         </div>
     </div>
-    <script src="js/tag.js"></script>
+    <script src="tag.js"></script>
 </body>
 
 </html>

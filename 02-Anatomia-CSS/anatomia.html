@@ -5,12 +5,42 @@
     <meta charset="UTF-8">
     <title>Anatomia CSS</title>
     <style>
-        /* ... */
+        .seletor {
+            /* Cor da Fonte */
+            color: #fff;
+            /* Tamanhao da Fonte */
+            font-size: 30px;
+            /* Alinhamento do texto */
+            text-align: center;
+            /* Estilo da Borda */
+            border: solid 5px navy;
+            /* Fonte */
+            font-family: helvetica, sans-serif;
+
+            /* Funções */
+            /* ocupará 100% da tela, e diminuirá 100px da direita para esquerda */
+            width: calc(100% - 100px);
+            /* Cor de Fundo */
+            background-color: rgb(34, 153, 189);
+        }
+
+        /* Usando uma Pseudo-Classe */
+        .seletor:hover {
+            background-color: orangered;
+        }
+
+        /* Usando um Pseudo-Elemento */
+        /* Primeira Letra */
+        .seletor::first-letter {
+            font-size: 60px;
+            /* Peso da Fonte */
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <div class="selector">Conteúdo</div>
+    <div class="seletor">Conteúdo</div>
 </body>
 
 </html>
